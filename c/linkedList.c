@@ -170,23 +170,4 @@ Status ListInsert(LinkList *L, int i, ElemType e) {
   return OK;
 }
 
-int main() {
-  Node a, b, c;
-  LinkList first = &a;
-
-  a.data = 12;
-  a.next = &b;
-  b.data = 30;
-  b.next = &c;
-  c.data = 64;
-  c.next = NULL;
-
-  while (first != NULL) {
-    printf("address=%p, ", first);    //印出節點的位址
-    printf("data=%d ", first->data);  //印出節點的資料
-    printf("next=%p\n", first->next); //印出下一個節點位址
-    first = first->next;              //將first指向下一個節點
-  }
-
-  return 0;
-}
+int main() {}
